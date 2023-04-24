@@ -1,2 +1,32 @@
 // Import all of Bootstrap's CSS
+$body-bg: rgb(27, 27, 27);
+$body-color: white;
+$primary: rgb(0, 119, 255);
+$font-family-sans-serif: "Poppins", sans-serif;
+
 @import "bootstrap/scss/bootstrap";
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (width >= 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.custombg {
+  background: black url("../../assets/abstract.91fe92b5.jpg");
+  background-size: cover;
+}
+
+.card-body {
+  background-color: #2e2e2e;
+  margin-bottom: 2rem;
+}
+
+.card-body p {
+  color: #c2c2c2;
+}
